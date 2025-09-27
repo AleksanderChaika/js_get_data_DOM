@@ -14,7 +14,7 @@ const validCount = populations.length;
 const total = validCount > 0 ? populations.reduce((a, b) => a + b, 0) : 0;
 const average = validCount > 0 ? Math.round(total / validCount) : 0;
 
-const formatter = new Intl.NumberFormat(undefined, {
+const formatter = new Intl.NumberFormat('en- US ', {
   maximumFractionDigits: 0,
 });
 
